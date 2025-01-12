@@ -23,7 +23,7 @@ const AboutTilesMarble = () => {
           durability and style. Explore our range of wall and floor tiles,
            suit every aesthetic and function.
         </p>
-        <button data-aos="fade-up"  style={styles.tilemarbel}>View Tiles</button>
+        <button data-aos="fade-up"  style={styles.tilemarbel}> Tiles</button>
       </div>
 
       {/* Marble Column */}
@@ -40,7 +40,7 @@ const AboutTilesMarble = () => {
           collection brings sophistication to any space, ideal for countertops,
           flooring, and more.
         </p>
-        <button data-aos="fade-up" style={styles.tilemarbel}>View Marbles</button>
+        <button data-aos="fade-up" style={styles.tilemarbel}> Marbles</button>
       </div>
     </div>
     </div>

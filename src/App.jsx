@@ -32,10 +32,10 @@ const App = () => {
       <AboutTilesMarbel/>
       </div>
       
-      {/* <AboutBySpace/>
+      <AboutBySpace/>
       <DiscoverNaturalStone/>
       <ContactUs/>
-      <Footer/> */}
+      <Footer/>
     </div>
   )
 }

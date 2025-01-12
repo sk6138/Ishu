@@ -36,7 +36,7 @@ const styles = {
     margin:"auto",
   },
   logo: {
-    width: "150px", // Adjust the width as needed
+    width: "20%", // Adjust the width as needed
     height: "auto",
   },
   searchBar: {
@@ -45,7 +45,7 @@ const styles = {
     padding: "8px",
     border: "1px solid #ccc",
     borderRadius: "4px",
-    maxWidth:"500px",
+    maxWidth:"40%",
   },
   loginButton: {
     padding: "8px 16px",
@@ -54,7 +54,7 @@ const styles = {
     border: "none",
     borderRadius: "4px",
     cursor: "pointer",
-    width: "150px",
+    width: "20%",
   },
 };
 
