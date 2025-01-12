@@ -3,7 +3,7 @@ import  hero1 from '../assets/tile-merchant-ireland-SXAgGV1Rw_E-unsplash.jpg'
 
 const AboutTilesMarble = () => {
   return (
-    <div style={styles.main}>
+    <div style={styles.main} id="Tiles" >
     <h1 style={styles.title1} data-aos="fade-up">About Tiles & Marble</h1>
     
     

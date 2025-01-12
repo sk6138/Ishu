@@ -79,7 +79,7 @@ const AboutBySpace = () => {
   };
 
   return (
-    <div style={containerStyle}>
+    <div style={containerStyle} id='Space'>
       <h1 style={title1}>Tiles by Space</h1>
       <p style={description}>
         Your spaces are a reflection of your tastes. Find design inspiration right here! <br />

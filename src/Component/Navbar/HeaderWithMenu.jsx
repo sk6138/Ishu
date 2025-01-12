@@ -7,10 +7,24 @@ const HeaderWithMenu = () => {
 
       {/* Second Row: Menu Items */}
       <div style={styles.menu}>
-        <div style={styles.menuItem}>Space</div>
-        <div style={styles.menuItem}> Tiles</div>
-        <div style={styles.menuItem}>Marble</div>
-        <div style={styles.menuItem}>Products</div>
+        <div style={styles.menuItem}>
+          <a href="#Space">
+          Space
+          </a>
+         </div>
+        <div style={styles.menuItem}> 
+        <a href="#Tiles">
+        Tiles
+          </a></div>
+        <div style={styles.menuItem}>
+        <a href="#Marble">
+        Marble
+          </a>
+          </div>
+        <div style={styles.menuItem}>
+        <a href="#Store">
+        Store 
+          </a></div>
       </div>
     </div>
   );

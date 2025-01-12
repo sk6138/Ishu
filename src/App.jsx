@@ -9,6 +9,8 @@ import AboutBySpace from './Component/AboutBySpace'
 import ContactUs from './Component/ContactUs'
 import DiscoverNaturalStone from './Component/DiscoverNaturalStone'
 
+import Login from './Component/Login';
+
 
 const App = () => {
   useEffect(() => {
@@ -19,24 +21,35 @@ const App = () => {
       mirror: true, // Repeat animation when scrolling backs
     });
   }, []);
+  
   return (
+    <>
     <div>
-      <div >
-      <Navbar/>
+        <Login/>
+        
+         
       </div>
-     <div >
-     <Hero/>
-     </div>
-     
-      <div >
-      <AboutTilesMarbel/>
-      </div>
+   
+       <div>
       
-      <AboutBySpace/>
-      <DiscoverNaturalStone/>
-      <ContactUs/>
-      <Footer/>
-    </div>
+       <Navbar/>
+       
+      <Hero/>
+     
+       <AboutTilesMarbel/>
+       
+       
+       <AboutBySpace/>
+       <DiscoverNaturalStone/>
+       <ContactUs/>
+       <Footer/>
+     </div>
+    
+      
+    
+
+   
+    </>
   )
 }
 

@@ -79,7 +79,7 @@ const ContactUs = () => {
 
 
   return (
-    <div style={containerStyle}>
+    <div style={containerStyle} id='Store'>
       {/* Background Image */}
       <img src={contactImage} alt="Contact Us" style={imageStyle} />
 

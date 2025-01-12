@@ -98,7 +98,7 @@ const DiscoverNaturalStone = () => {
   ];
 
   return (
-    <div style={containerStyle}>
+    <div style={containerStyle} id='Marble'>
       <h1 style={title1}>Discover Natural Stone</h1>
       <p style={description}>The uniqueness of materials such as marble, granite, onyx, and semi-precious stones, is transformed  into livable surfaces.</p>
       <div style={gridStyle}>
