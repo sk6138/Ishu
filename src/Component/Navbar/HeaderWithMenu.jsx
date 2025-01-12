@@ -8,8 +8,7 @@ const HeaderWithMenu = () => {
       {/* Second Row: Menu Items */}
       <div style={styles.menu}>
         <div style={styles.menuItem}>Space</div>
-        <div style={styles.menuItem}>Wall Tiles</div>
-        <div style={styles.menuItem}>Floor Tiles</div>
+        <div style={styles.menuItem}> Tiles</div>
         <div style={styles.menuItem}>Marble</div>
         <div style={styles.menuItem}>Products</div>
       </div>
