@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from 'react-router-dom';
 
 const HeaderWithMenu = () => {
   return (
@@ -22,9 +23,8 @@ const HeaderWithMenu = () => {
           </a>
           </div>
         <div style={styles.menuItem}>
-        <a href="/store">
-        Store 
-          </a></div>
+          <Link to="/store" >Store</Link>
+          </div>
       </div>
     </div>
   );
