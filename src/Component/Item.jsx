@@ -1,7 +1,7 @@
 import React from 'react'
-import Products from '../Component/Products'
-import Navbar from '../Component/Navbar'
-import Footer from "../Component/Footer";
+import Products from './Products'
+import Navbar from './Navbar'
+import Footer from "./Footer";
 import Image1 from '../assets/tile-merchant-ireland-SXAgGV1Rw_E-unsplash.jpg';
 export default function Item() {
     const products = [

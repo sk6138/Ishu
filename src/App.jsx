@@ -4,8 +4,8 @@ import "aos/dist/aos.css";
 import { Routes, Route, Router } from "react-router-dom";
 
 import OtpVerification from "./Component/OtpVerification";
-import Home from "./Page/Home";
-import Item from "./Page/Item";
+import Home from "./Component/Home";
+import Item from "./Component/Item";
 
 const App = () => {
   useEffect(() => {
