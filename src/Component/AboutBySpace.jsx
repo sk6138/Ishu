@@ -25,6 +25,7 @@ const AboutBySpace = () => {
   const containerStyle = {
     margin: 'auto',
     display: 'flex',
+    
     flexDirection: 'column',
     gap: '30px',
     justifyContent: 'center',
@@ -77,24 +78,24 @@ const AboutBySpace = () => {
     fontSize: '16px',
     textAlign: 'center',
   };
-
+  const name = ["Kitchen","BathRoom","Living Area" , "BedRoom" , "Wall" , "Floor"]
   return (
     <div style={containerStyle} id='Space'>
-      <h1 style={title1}>Tiles by Space</h1>
-      <p style={description}>
+      <h1 style={title1} data-aos="fade-up">Tiles by Space</h1>
+      <p style={description} data-aos="fade-up">
         Your spaces are a reflection of your tastes. Find design inspiration right here! <br />
         Whether you are looking for Kitchen tiles, Bathroom tiles, or tiles to spruce up your living room, <br />
         your search ends here. Explore a wide variety of tile designs that suit your requirements.
       </p>
       <div style={gridStyle}>
-        {[1, 2, 3, 4, 5, 6].map((num) => (
-          <div style={cardStyle} key={num}>
-            <img src={hero1} alt={`Image ${num}`} style={imageStyle} />
-            <h3 style={titleStyle}>{`Image ${num}`}</h3>
+        {name.map((num) => (
+          <div style={cardStyle} key={num} data-aos="fade-up">
+            <img src={hero1} alt={` ${num} Tiles`} style={imageStyle} />
+            <h3 style={titleStyle}>{`${num} Tiles`}</h3>
           </div>
         ))}
       </div>
-      <button style={viewallStyle}>View All Tiles</button>
+      <button data-aos="fade-up" style={viewallStyle}>View All Tiles</button>
     </div>
   );
 };

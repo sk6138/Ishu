@@ -3,7 +3,7 @@ import  hero1 from '../assets/tile-merchant-ireland-SXAgGV1Rw_E-unsplash.jpg'
 
 const AboutTilesMarble = () => {
   return (
-    <div style={styles.main} id="Tiles" >
+    <div style={styles.main} id="Tiles" data-aos="fade-up" >
     <h1 style={styles.title1} data-aos="fade-up">About Tiles & Marble</h1>
     
     
@@ -18,7 +18,7 @@ const AboutTilesMarble = () => {
           style={styles.image}
         />
         <h2 data-aos="fade-up" style={styles.title}> Tiles </h2>
-        <p style={styles.description} data-aos="fade-right">
+        <p style={styles.description} data-aos="fade-up">
           Tiles are an essential part of modern architecture, offering both
           durability and style. Explore our range of wall and floor tiles,
            suit every aesthetic and function.
@@ -35,7 +35,7 @@ const AboutTilesMarble = () => {
           style={styles.image}
         />
         <h2 data-aos="fade-up" style={styles.title}> Marble</h2>
-        <p style={styles.description} data-aos="fade-right">
+        <p style={styles.description} data-aos="fade-up">
           Marble symbolizes luxury and timeless elegance. Our premium marble
           collection brings sophistication to any space, ideal for countertops,
           flooring, and more.
@@ -49,6 +49,7 @@ const AboutTilesMarble = () => {
 
 const styles = {
   main:{
+   
     maxWidth:"1240px",
     margin:"auto",
   },

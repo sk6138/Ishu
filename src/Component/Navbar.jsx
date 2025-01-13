@@ -1,7 +1,6 @@
 import React, { useState } from "react";
 import logoImage from "/src/assets/png/logo-no-background.png"; // Correct import
-import HeaderWithMenu from "./Navbar/HeaderWithMenu";
-
+import { Link } from "react-router-dom";
 const Navbar = () => {
   const [search,setsearch] = useState("")
 
@@ -30,17 +29,25 @@ const Navbar = () => {
       
 
       {/* Login Button */}
+      {/* <Link to="/login"> */}
+    <button style={styles.button}>
+    <Link to="/login" style={styles.loginButton}>Login</Link>
+    </button>
+      
+      
+      {/* </Link> */}
      
-     <button style={styles.loginButton}>Login</button>
       </div>
-      <HeaderWithMenu/>
+      
     </div>
   );
 };
 
 const styles = {
   container: {
+    // position: "sticky",
     maxWidth:"1240px",
+    height:'10vh',
     display: "flex",
     alignItems: "center",
     justifyContent: "space-between",
@@ -64,6 +71,7 @@ const styles = {
     width:"100%",
   },
   loginButton: {
+
     padding: "8px 16px",
     backgroundColor: "#000",
     color: "#fff",
@@ -72,6 +80,9 @@ const styles = {
     cursor: "pointer",
     width: "20%",
   },
+  button:{
+    border:"none",
+  }
 };
 
 export default Navbar;

@@ -3,6 +3,7 @@ import stoneImage from '../assets/tile-merchant-ireland-SXAgGV1Rw_E-unsplash.jpg
 
 const DiscoverNaturalStone = () => {
   const containerStyle = {
+   
     margin: 'auto',
     display: 'flex',
     flexDirection: 'column',
@@ -98,21 +99,21 @@ const DiscoverNaturalStone = () => {
   ];
 
   return (
-    <div style={containerStyle} id='Marble'>
-      <h1 style={title1}>Discover Natural Stone</h1>
-      <p style={description}>The uniqueness of materials such as marble, granite, onyx, and semi-precious stones, is transformed  into livable surfaces.</p>
+    <div style={containerStyle} id='Marble' data-aos="fade-up">
+      <h1 style={title1} data-aos="fade-up">Discover Natural Stone</h1>
+      <p data-aos="fade-up" style={description}>The uniqueness of materials such as marble, granite, onyx, and semi-precious stones, is transformed  into livable surfaces.</p>
       <div style={gridStyle}>
         {cardData.map((card) => (
-          <div style={cardStyle} key={card.id}>
-            <img src={stoneImage} alt={card.title} style={imageStyle} />
-            <div style={cardContentStyle}>
-              <h3 style={cardTitleStyle}>{card.title}</h3>
-              <p style={cardDescriptionStyle}>{card.description}</p>
+          <div style={cardStyle} key={card.id} data-aos="fade-up">
+            <img src={stoneImage} alt={card.title} style={imageStyle}  />
+            <div style={cardContentStyle} >
+              <h3 style={cardTitleStyle} >{card.title}</h3>
+              <p style={cardDescriptionStyle} >{card.description}</p>
             </div>
           </div>
         ))}
       </div>
-      <button style={viewAllStyle}>View All Stones</button>
+      <button style={viewAllStyle} data-aos="fade-up" >View All Stones</button>
     </div>
   );
 };

@@ -4,6 +4,7 @@ import { FaPhoneAlt, FaWhatsapp, FaEnvelope } from 'react-icons/fa';
 
 const ContactUs = () => {
   const containerStyle = {
+    
     position: 'relative',
     display: 'flex',
     justifyContent: 'center',
@@ -79,7 +80,7 @@ const ContactUs = () => {
 
 
   return (
-    <div style={containerStyle} id='Store'>
+    <div style={containerStyle} id='Store' data-aos="flip-up">
       {/* Background Image */}
       <img src={contactImage} alt="Contact Us" style={imageStyle} />
 

@@ -10,6 +10,7 @@ const Footer = () => {
   };
 
   const footerContainerStyle = {
+   
     display: "flex",
     flexWrap: "wrap",
     justifyContent: "space-between",

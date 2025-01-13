@@ -58,15 +58,15 @@ const Login = () => {
     //     }
     // };
 
-    // const verifyOtp = () => {
-    //     if (confirmationResult) {
-    //         confirmationResult.confirm(otp).then((result) => {
-    //             console.log('User signed in successfully:', result.user);
-    //         }).catch((error) => {
-    //             console.error('Error verifying OTP:', error);
-    //         });
-    //     }
-    // };
+    const verifyOtp = () => {
+        // if (confirmationResult) {
+        //     confirmationResult.confirm(otp).then((result) => {
+        //         console.log('User signed in successfully:', result.user);
+        //     }).catch((error) => {
+        //         console.error('Error verifying OTP:', error);
+        //     });
+        // }
+    };
 
     return (
         <div>
@@ -80,13 +80,13 @@ const Login = () => {
             />
             <button onClick={handleSendOtp}>Send OTP</button>
 
-            {/* <input
+            <input
                 type="text"
                 value={otp}
                 onChange={(e) => setOtp(e.target.value)}
                 placeholder="Enter OTP"
             />
-            <button onClick={verifyOtp}>Verify OTP</button> */}
+            <button onClick={verifyOtp}>Verify OTP</button>
         </div>
     );
 };
