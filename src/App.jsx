@@ -6,6 +6,9 @@ import { Routes, Route, Router } from "react-router-dom";
 import OtpVerification from "./Component/OtpVerification";
 import Home from "./Component/Home";
 import Item from "./Component/Item";
+import DetailPage from "./Component/DetailPage";
+
+
 
 const App = () => {
   useEffect(() => {
@@ -24,6 +27,7 @@ const App = () => {
           <Route path="/login" element={<OtpVerification />} />
           <Route path="/" element={<Home />} />
           <Route path="/store" element={<Item />} />
+          <Route path="/details" element={<DetailPage />} />
         </Routes>
     
        

@@ -1,5 +1,8 @@
-import React from "react";
+import React, { useState } from "react";
 import Image1 from '../assets/tile-merchant-ireland-SXAgGV1Rw_E-unsplash.jpg';
+import { useNavigate } from "react-router-dom";
+
+
 const Product = ({ prod }) => {
   const styles = {
     card: {
@@ -73,9 +76,17 @@ const Product = ({ prod }) => {
     },
   };
 
-  const [isHovered, setIsHovered] = React.useState(false);
+  const [isHovered, setIsHovered] = useState(false);
+  const navigate = useNavigate();
 
+  const handleMoreDetails = () => {
+    navigate("/details", { state: { product: prod } });
+  };
+  
   return (
+   <>
+    
+
     <div
       style={{
         ...styles.card,
@@ -85,7 +96,7 @@ const Product = ({ prod }) => {
       onMouseLeave={() => setIsHovered(false)}
     >
       {/* Product Image */}
-      <div style={styles.imageContainer}>
+      <div style={styles.imageContainer} onClick={handleMoreDetails}>
         <img
           src={Image1}
           alt={Image1}
@@ -98,12 +109,16 @@ const Product = ({ prod }) => {
 
       {/* Product Details */}
       <div style={styles.content}>
+        <div  >
+        
         <h3 style={styles.title}>{prod.name}</h3>
         <p style={styles.category}>
           Category: {prod.category} | Color: {prod.color}
         </p>
         <p style={styles.description}>{prod.description}</p>
         <p style={styles.price}>${prod.price}</p>
+        
+        </div>
         <button
           style={{
             ...styles.button,
@@ -117,11 +132,13 @@ const Product = ({ prod }) => {
             ...styles.button,
             ...(isHovered ? styles.buttonHover : {}),
           }}
-        >
+          onClick={handleMoreDetails} >
           More Details
         </button>
       </div>
     </div>
+
+    </>
   );
 };
 

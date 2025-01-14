@@ -1,20 +1,31 @@
 import React, { useState } from "react";
 import logoImage from "/src/assets/png/logo-no-background.png"; // Correct import
 import { Link } from "react-router-dom";
-const Navbar = () => {
+import { useNavigate } from "react-router-dom";
+import HeaderWithMenu from "./HeaderWithMenu";
+const Navbar = ({handlesearch , searchvisible}) => {
   const [search,setsearch] = useState("")
+   const navigate = useNavigate();
 
   function handlesubmit (e){
      e.preventDefault();
-     console.log(search)
+     handlesearch(search)
+     
   }
+  function handlehome (){
+    navigate("/")
+ }
   return (
     <div  data-aos="fade-down">
     <div style={styles.container}>
       {/* Logo */}
-      <img src={logoImage} alt="Logo" style={styles.logo} />
+      <img src={logoImage} alt="Logo"  style={styles.logo} onClick={handlehome} />
+     
 
-      {/* Search Bar */}
+ {
+  (searchvisible) ? 
+ 
+    
       <form style={styles.form} onSubmit={handlesubmit}>
       <input
         type="text"
@@ -22,11 +33,18 @@ const Navbar = () => {
         value={search}
         onChange={(e)=>{
           setsearch(e.target.value)
+          
         }}
         style={styles.searchBar}
       />
       </form>
+       :
+       <div style={styles.link} >
+        <HeaderWithMenu/>
+        </div>
+       
       
+}
 
       {/* Login Button */}
       {/* <Link to="/login"> */}
@@ -82,6 +100,9 @@ const styles = {
   },
   button:{
     border:"none",
+  },
+  link:{
+    width:"100%"
   }
 };
 

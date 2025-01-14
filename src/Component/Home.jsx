@@ -9,11 +9,12 @@ import DiscoverNaturalStone from "../Component/DiscoverNaturalStone";
 import HeaderWithMenu from '../Component/HeaderWithMenu';
 
 
+
 const Home = () => {
   return (
     <div>
-       <Navbar />
-       <HeaderWithMenu/>
+       <Navbar searchvisible={false} />
+       {/* <HeaderWithMenu/> */}
         <Hero />
         <AboutTilesMarbel />
         <AboutBySpace />

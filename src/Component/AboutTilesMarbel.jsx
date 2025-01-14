@@ -1,5 +1,6 @@
 import React from "react";
 import  hero1 from '../assets/tile-merchant-ireland-SXAgGV1Rw_E-unsplash.jpg' 
+import ItemsAbout from "./ItemsAbout";
 
 const AboutTilesMarble = () => {
   return (
@@ -8,9 +9,16 @@ const AboutTilesMarble = () => {
     
     
     <div style={styles.container}>
+
+      <ItemsAbout image={hero1} title="Tiles" desc="Tiles are an essential part of modern architecture, offering both
+          durability and style. Explore our range of wall and floor tiles,
+           suit every aesthetic and function." />
+        <ItemsAbout image={hero1} title="Marble" desc=" Marble symbolizes luxury and timeless elegance. Our premium marble
+          collection brings sophistication to any space, ideal for countertops,
+          flooring, and more." />
      
       {/* Tiles Column */}
-      <div style={styles.column} >
+      {/* <div style={styles.column} >
         <img
           data-aos="fade-up"
           src={hero1}
@@ -24,10 +32,10 @@ const AboutTilesMarble = () => {
            suit every aesthetic and function.
         </p>
         <button data-aos="fade-up"  style={styles.tilemarbel}> Tiles</button>
-      </div>
+      </div> */}
 
       {/* Marble Column */}
-      <div style={styles.column} >
+      {/* <div style={styles.column} >
         <img
         data-aos="fade-up"
           src={hero1}
@@ -41,7 +49,7 @@ const AboutTilesMarble = () => {
           flooring, and more.
         </p>
         <button data-aos="fade-up" style={styles.tilemarbel}> Marbles</button>
-      </div>
+      </div> */}
     </div>
     </div>
   );
