@@ -80,7 +80,8 @@ const Product = ({ prod }) => {
   const navigate = useNavigate();
 
   const handleMoreDetails = () => {
-    navigate("/details", { state: { product: prod } });
+    // navigate("/details", { state: { product: prod } });
+    
   };
   
   return (

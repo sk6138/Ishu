@@ -76,7 +76,7 @@ const Hero = () => {
 
 const styles = {
   heroContainer: {
-    height:'80vh',
+    height:'90vh',
     position: "relative",
     
     overflow: "hidden",
